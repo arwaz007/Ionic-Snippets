@@ -1,0 +1,8 @@
+//for saving data into session
+myFun(data){
+this.session.setItem('name',data.value.uname);
+this.session.setItem('mobile',data.value.phone);
+this.session.setItem('mail',data.value.email);
+this.session.setItem('pass',data.value.password);
+this.router.navigate(['/login']);
+}
